@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 17-20</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>CHAPTER # 12 to 13</h1>
+        <p>----------------------------------------------------------------------------</p>
+        <div class="color">
+            <script>
+                // --------------------Qno:01------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #1 <br></h1>");
+
+                var arr = [[], [], []];
+                document.write("Declared and Initialized an empty array");
+
+                // --------------------Qno:02------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #2 <br></h1>");
+
+                var arr = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]];
+                document.write(arr[0]);
+                document.write("<br>");
+                document.write(arr[1]);
+                document.write("<br>");
+                document.write(arr[2]);
+
+                // --------------------Qno:03------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #3 <br></h1>");
+
+                // var arr=[1,2,3,4,5,6,7,8,9,10];
+                for (i = 1; i <= 10; i++) {
+                    document.write(i, "<br>");
+                }
+
+                // --------------------Qno:04------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #4 <br></h1>");
+
+                var num = prompt("Type the number: ");
+                var length = prompt("Write the length of the multiplication:");
+                for (i = 1; i <= length; i++) {
+                    document.write(num, "x", i, "=", num * i, "<br>");
+                }
+
+                // --------------------Qno:05------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #5 <br></h1>");
+
+                var fruits = ['Apple', 'Banana', 'Mango', 'Orange', 'Strawberry'];
+                for (i = 0; i < fruits.length; i++) {
+                    document.write(fruits[i], '<br>');
+                }
+
+                // --------------------Qno:06------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #6 <br></h1>");
+
+                var counting = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+                var revCoun = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+                var even = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+                var odd = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
+                var series = ['2k', '4k', '6k', '8k', '10k', '12k', '14k', '16k', '18k', '20k'];
+
+                document.write("<b>Counting</b>:<br>", counting);
+                document.write("<br>");
+                document.write("<b>Reverse Counting</b>:<br>", revCoun);
+                document.write("<br>");
+                document.write("<b>Even</b>:<br>", even);
+                document.write("<br>");
+                document.write("<b>Odd</b>:<br>", odd);
+                document.write("<br>");
+                document.write("<b>Series</b>:<br>", series);
+
+                // --------------------Qno:07------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #7 <br></h1>");
+
+                var a = ['apple pie', 'cake', 'cookie', 'chips', 'patties'];
+                var bakery = prompt("Welcome to ABC bakery, What do you want sir/maam?");
+                var found = false;
+
+                for (i = 0; i <= a.length; i++) {
+                    if (bakery === a[i]) {
+                        document.write(a[i], " is available at index ", a.indexOf(i), " in our bakery");
+                        found=true;
+                        break;
+                    }
+                }
+                if (found=== false){
+                        document.write("we are sorry ", bakery, " is not available in our bakery")
+                }
+
+
+
+                // --------------------Qno:08------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #8 <br></h1>");
+
+                var arr = [24, 53, 78, 91, 12];
+                var larNo = 0;
+                var shortNo = 91;
+
+                for (i = 0; i < arr.length; i++) {
+                    if (arr[i] > larNo) {
+                        larNo = arr[i];
+                    }
+                }
+
+                document.write("Array Items: ", arr);
+                document.write("<br>");
+                document.write("The largest number in this array is ", larNo);
+
+                // --------------------Qno:09------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #9 <br></h1>");
+
+                for (i = 0; i < arr.length; i++) {
+                    if (arr[i] < shortNo) {
+                        shortNo = arr[i];
+                    }
+                }
+
+                document.write("Array Items: ", arr);
+                document.write("<br>");
+                document.write("The smallest number in this array is ", shortNo);
+
+                // --------------------Qno:10------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #10 <br></h1>");
+
+                for (i = 1; i < 50; i++) {
+                    var num = 5 * i;
+                    document.write(num, ",");
+                    if (num === 100) {
+                        break;
+                    }
+                }
+
+            </script>
+        </div>
+        <br><br>
+        <div class="foot">
+            <div class="chap1" id="space">
+                <a href="../index.html">
+                    << Home </a>
+            </div>
+    </center>
+</body>
+
+</html>

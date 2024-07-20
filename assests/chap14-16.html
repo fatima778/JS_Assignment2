@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 14-16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>CHAPTER # 12 to 13</h1>
+        <p>----------------------------------------------------------------------------</p>
+        <div class="color">
+            <script>
+                // --------------------Qno:01------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #1 <br></h1>");
+
+                var stdnts = [];
+                document.write("Empty array have been declared for students name");
+
+                // --------------------Qno:02------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #2 <br></h1>");
+
+                var arr = ["Apple", "Mango"];
+                document.write("An array have been declared and initalized for fruits name");
+
+                // --------------------Qno:03------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #3 <br></h1>");
+
+                var numbers = [1, 2, 3, 4, 5, 7];
+                document.write("An array have been declared and initalized for numbers");
+
+                // --------------------Qno:04------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #4 <br></h1>");
+
+                var boolean = [true, false];
+                document.write("An array have been declared and initalized for boolean numbers");
+
+                // --------------------Qno:05------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #5 <br></h1>");
+
+                var mixed = [23, 'apple', 8.9, true];
+                document.write("An array have been declared and initalized for mixed numbers");
+
+                // --------------------Qno:06------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #6 <br></h1>");
+
+                var eduQuali = ["SSC", "HSC", "BSC", "BS", "BCOM", "MS", "M.Phill", "PhD"];
+
+                document.write("Qualifications");
+                document.write("<br>1) ", eduQuali[0]);
+                document.write("<br>2) ", eduQuali[1]);
+                document.write("<br>3) ", eduQuali[2]);
+                document.write("<br>4) ", eduQuali[3]);
+                document.write("<br>5) ", eduQuali[4]);
+                document.write("<br>6) ", eduQuali[5]);
+                document.write("<br>7) ", eduQuali[6]);
+                document.write("<br>8) ", eduQuali[7]);
+
+                // --------------------Qno:07------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #7 <br></h1>");
+
+                var stdntsName = ["Micheal", "John", "Tony"];
+                var stdntsScore = [320, 230, 480];
+                var per = ['64%', '46%', '96%'];
+
+                document.write("Score of ", stdntsName[0], ' is ', stdntsScore[0], ' Percentage: ', per[0], '<br>');
+                document.write("Score of ", stdntsName[1], ' is ', stdntsScore[1], ' Percentage: ', per[1], '<br>');
+                document.write("Score of ", stdntsName[2], ' is ', stdntsScore[2], ' Percentage: ', per[2], '<br>');
+
+                // --------------------Qno:08------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #8 <br></h1>");
+
+                var colors = ['white', 'blue', 'yellow', 'green'];
+                document.write(colors);
+
+                colors.unshift(prompt("Write the name of the color which do you want to store in the beginning>>"));
+                document.write("<br>After adding the color in the beginning of the array: ", colors);
+
+                colors.push(prompt("Write the name of the color which do you want to store at the end>>"));
+                document.write("<br>After adding the color at the end of the array: ", colors);
+
+                colors.unshift('purple', 'pink');
+                document.write("<br>After adding two colors in the beginning of the array: ", colors);
+
+                colors.shift();
+                document.write("<br>After deleting a color in the beginning of the array: ", colors);
+
+                colors.pop();
+                document.write("<br>After deleting a color at the end of the array: ", colors);
+
+                var noIndex = parseInt(prompt("In which index number you want to add color?"));
+                var colorName = prompt("Which color you want to add on your desired position?");
+                colors.splice(noIndex, 0, colorName);
+                document.write("<br>After adding a color on the desired position of the user: ", colors);
+
+                var indexNoforDel = parseInt(prompt("From which index you want to remove colors?"));
+                var noOfColors = parseInt(prompt("How many colors you wwant to delete?"));
+                colors.splice(indexNoforDel, noOfColors);
+                document.write("<br>After deleting colors on the desired position of the user: ", colors);
+
+                // --------------------Qno:09------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #9 <br></h1>");
+
+                var scores = [320, 230, 480, 120];
+                document.write("Scores of Students: ", scores);
+                scores.sort();
+                document.write("<br>Scores of Students after sorting: ", scores);
+
+                // --------------------Qno:10------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #10 <br></h1>");
+
+                var cities = ['Karachi', 'Islamabad', 'Quetta', 'Lahore', 'Peshawar'];
+                var selectedCities = cities.slice(1, 3);
+                document.write("Cities list: ", cities);
+                document.write("<br><br>Selected Cities: ", selectedCities);
+
+                // --------------------Qno:11------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #11 <br></h1>");
+
+                var arr = ['This', 'is', 'my', 'cat'];
+                document.write("Array: ", arr);
+                var string = arr.join(' ');
+                document.write("<br>String: ", string);
+
+                // --------------------Qno:12------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #12 <br></h1>");
+
+                var devices = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
+                document.write("Devices: ", devices);
+                document.write("<br>Out:<br> ", devices.shift());
+                document.write("<br>Out:<br> ", devices.shift());
+                document.write("<br>Out:<br> ", devices.shift());
+                document.write("<br>Out:<br> ", devices.shift());
+
+                // --------------------Qno:13------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #13 <br></h1>");
+
+                var devices = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
+                document.write("Devices: ", devices);
+                document.write("<br>Out:<br> ", devices.pop());
+                document.write("<br>Out:<br> ", devices.pop());
+                document.write("<br>Out:<br> ", devices.pop());
+                document.write("<br>Out:<br> ", devices.pop());
+
+                // --------------------Qno:14------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #14 <br></h1>");
+
+                var manu = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+                document.write('<select><option value="Apple">' + manu[0] + '</option><option value="Samsung">' + manu[1] + '</option><option value="Motorola">' + manu[2] + '</option><option value="Nokia">' + manu[3] + '</option><option value="Sony">' + manu[4] + '</option><option value="Haier">' + manu[5] + '</option></select>');
+            </script>
+        </div>
+        <br><br>
+        <div class="foot">
+            <div class="chap1" id="space">
+                <a href="../index.html">
+                    << Home </a>
+            </div>
+            <div class="chap2" id="space2">
+                <a href="chap17-20.html"> Next >> </a>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

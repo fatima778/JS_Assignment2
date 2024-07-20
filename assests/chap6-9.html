@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 6-9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>CHAP 6 to 9</h1>
+        <p>-------------------------------------------------------</p>
+        <div class="color">
+            <script>
+
+                // --------------------Qno:01------------------------------------
+
+                document.write("<h1>Question #1 <br></h1>");
+                var a = 10;
+                document.write("Result: <br> The value of a is: ", a);
+                document.write("<br>.................................................<br>")
+                ++a;
+                document.write("<br> The value of ++a is: ", a);
+                document.write("<br> Now the value of a is: ", a, "<br>");
+                document.write("<br> The value of a++ is: ", a);
+                a++;
+                document.write("<br> Now the value of a is: ", a, "<br>");
+                --a;
+                document.write("<br> The value of --a is: ", a);
+                document.write("<br> Now the value of a is: ", a, "<br>");
+                document.write("<br> The value of a-- is: ", a);
+                a--;
+                document.write("<br> Now the value of a is: ", a, "<br>");
+
+                // --------------------Qno:02------------------------------------
+                document.write("<br>");
+                document.write("<br>");
+
+
+                document.write("<h1>Question #2 <br></h1>");
+
+                var x = 2, y = 1;
+                var result = --x - --y + ++y + y--;
+                --x;
+                --x - --y;
+                --x - --y + ++y;
+                --x - --y + ++y + y--;
+
+                document.write("The value of x: ", x);
+                document.write("<br>");
+                document.write("The value of y: ", y);
+                document.write("<br>");
+                document.write("The value of result: ", result);
+                document.write("<br>");
+
+                // --------------------Qno:03------------------------------------
+                document.write("<br>");
+                document.write("<br>");
+
+
+                document.write("<h1>Question #3 <br></h1>");
+                var name = prompt("Enter Your Name: ");
+                alert("WELCOME " + name + " !");
+
+                document.write("Alerrt message<br>");
+
+                // --------------------Qno:04------------------------------------
+                document.write("<br>");
+                document.write("<br>");
+
+
+                document.write("<h1>Question #4 <br></h1>");
+
+                var num = prompt("Enter number (or leave blank for table of 5)");
+                if (num === "") {
+                    num = 5;
+                }
+                for (i = 1; i <= 10; i++) {
+                    document.write(num + " x " + i + " = " + (num * i) + "<br>");
+                }
+
+                // --------------------Qno:05------------------------------------
+                document.write("<br>");
+                document.write("<br>");
+
+
+                document.write("<h1>Question #5 <br></h1>");
+
+                var sub1 = prompt("Enter first subject");
+                var obt1 = prompt("Enter first subject's marks")
+
+                var sub2 = prompt("Enter second subject");
+                var obt2 = prompt("Enter second subject's marks")
+
+                var sub3 = prompt("Enter third subject");
+                var obt3 = prompt("Enter third subject's marks")
+
+                var total = 300;
+                var totalObt = obt1 + obt2 + obt3;
+                var sub1Per = (obt1 / 100) * 100;
+                var sub2Per = (obt2 / 100) * 100;
+                var sub3Per = (obt2 / 100) * 100;
+
+                var totalPer = (totalObt / total) * 100;
+
+                document.write("<table><tr><th>Subject </th><th>  Total Marks </th><th>  Obtained Marks</th><th>  Percentage </th></tr><tr><td>" + sub1 + "</td><td>100 </td><td>" + obt1 + "</td><td>" + sub1Per + "%</td></tr><tr><td>" + sub2 + "</td><td>100 </td><td>" + obt2 + "</td><td>" + sub2Per + "%</td></tr><tr><td>" + sub3 + "</td><td>100 </td><td>" + obt3 + "</td><td>" + sub3Per + "%</td></tr></table>");
+            </script>
+        </div>
+        <br><br>
+        <div class="foot">
+            <div class="chap1" id="space">
+                <a href="../index.html">
+                    << Home </a>
+            </div>
+            <div class="chap2" id="space2">
+                <a href="chap9-11.html"> Next >> </a>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

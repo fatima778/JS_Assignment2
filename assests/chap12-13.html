@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap12-13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>CHAPTER # 12 to 13</h1>
+        <p>----------------------------------------------------------------------------</p>
+        <div class="color">
+            <script>
+                // --------------------Qno:01------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #1 <br></h1>");
+
+                let input = prompt("Enter any character>>"); 
+
+                if (input.length !== 1) {
+                    alert("Please enter a single character.");
+                } else {
+                    const charCode = input.charCodeAt(0);
+
+                    if (charCode >= 48 && charCode <= 57) {
+                        alert("The input is a number.");
+                    } else if (charCode >= 65 && charCode <= 90) {
+                        alert("The input is an uppercase letter.");
+                    } else if (charCode >= 97 && charCode <= 122) {
+                        alert("The input is a lowercase letter.");
+                    } else {
+                        alert("The input is not a number, uppercase letter, or lowercase letter.");
+                    }
+                }
+                
+                // --------------------Qno:02------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #2 <br></h1>");
+
+                var num = parseInt(prompt("Enter nmber:"));
+                var num1 = parseInt(prompt("Enter nmber:"));
+
+                if (num < num1) {
+                    document.write(num1, " is greater");
+                }
+                else if (num > num1) {
+                    document.write(num, " is greater");
+                }
+                else if (num === num1) {
+                    document.write(num, " is equal to ", num1);
+                }
+
+                // --------------------Qno:03------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #3 <br></h1>");
+
+                var n = parseInt(prompt("Enter nmber:"));
+
+                if (n < 0) {
+                    document.write(n, " is neagtive integer");
+                }
+                else if (n > 0) {
+                    document.write(n, " is positive integer");
+                }
+                else if (n === 0) {
+                    document.write(n, " is equals to zero ");
+                }
+                // --------------------Qno:04------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #4 <br></h1>");
+
+                var vowel = prompt("Enter a vowel letter:");
+
+                if (vowel === 'a') {
+                    document.write("True, the letter is vowel");
+                }
+                else if (vowel === 'e') {
+                    document.write("True, the letter is vowel");
+                }
+                else if (vowel === 'i') {
+                    document.write("True, the letter is vowel");
+                }
+                else if (vowel === 'o') {
+                    document.write("True, the letter is vowel");
+                }
+                else if (vowel === 'u') {
+                    document.write("True, the letter is vowel");
+                }
+                else {
+                    document.write("False, the letter is not voweel");
+                }
+                // --------------------Qno:05------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #5 <br></h1>");
+
+                var pass = "fatha124bean";
+                var pass1 = prompt("Enter your password:");
+                if (pass === "") {
+                    pass1 = prompt("Please first enter your password");
+                }
+                if (pass1 === pass) {
+                    alert("Correct password!");
+                }
+                else {
+                    alert("Incorrect password!");
+                }
+                document.write("Alert message..");
+
+                // --------------------Qno:06------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #6 <br></h1>");
+
+                var greeting;
+                var hour = 13;
+                if (hour < 18) {
+                    greeting = "Good day";
+                }
+                else {
+                    greeting = "Good evening";
+                }
+
+                document.write("Alert message if else condition fixed.")
+
+                // --------------------Qno:07------------------------------------
+                document.write("<br><br>");
+                document.write("<h1>Question #7 <br></h1>");
+
+                var time = prompt("What time is it? (in 24 hours clock like 7pm= 1900)");
+
+                if (time >= 0 && time < 1200) {
+                    document.write("Good Morning!");
+                }
+                else if (time >= 1200 && time < 1700) {
+                    document.write("Good Afternoon!");
+                }
+                else if (time >= 1700 && time < 2100) {
+                    document.write("Good Evening!");
+                }
+                else if (time >= 2100 && time < 2359) {
+                    document.write("Good Night!");
+                }
+            </script>
+        </div>
+        <br><br>
+        <div class="foot">
+            <div class="chap1" id="space">
+                <a href="../index.html">
+                    << Home </a>
+            </div>
+            <div class="chap2" id="space2">
+                <a href="chap14-16.html"> Next >> </a>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
